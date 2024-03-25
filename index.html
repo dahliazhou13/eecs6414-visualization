@@ -10,5 +10,23 @@
   <body>
     <h2>Top 20 Tags on datascience.stackexchange.com</h2>
     <iframe width="100%" height="1066" frameborder="0" src="https://observablehq.com/embed/00dee51e04ad5f46@3091?cells=chart"></iframe>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+            Each bubble represents a tag in datascience.stackechange.com that can be used to categorize a post. 
+            The size of the bubble is based on the number of comments under posts with each tag.
+            The colour of the bubble is based on the percentage of negative comments under posts with that tag.
+            Use the labels under the chart to filter based on negativity percentage.
+        </p>
+    </figure>
+
+    <script src="script.js"></script>
+
   </body>
+  
 </html>
